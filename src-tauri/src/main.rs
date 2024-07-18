@@ -68,8 +68,7 @@ fn main() {
 
                         let hex = get_pixel(coords.0, coords.1);
                         let _ = window.emit("color", hex);
-                        // println!("{:?}", coords);
-                        std::thread::sleep(Duration::from_micros(100));
+                        std::thread::sleep(Duration::from_millis(1));
                     }
                 }
             });

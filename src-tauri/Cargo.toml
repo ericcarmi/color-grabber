@@ -1,7 +1,7 @@
 [package]
 name = "color-grabber"
 version = "0.0.0"
-description = "A Tauri App"
+description = "color grabber"
 authors = ["you"]
 edition = "2021"
 
