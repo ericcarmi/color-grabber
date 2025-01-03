@@ -1,4 +1,7 @@
-simple app with window that follows mouse around, shows rgb and hex values of pixels under mouse
+simple app to get RGB and hex values for pixel at mouse location
+- press left/right alt to update to current mouse position
+- press ctrl + Q to close
+- box position will change automatically depending on what quadrant of the screen the mouse is in
 
 currently only working with windows via rust bindings to winapi
 
