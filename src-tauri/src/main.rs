@@ -36,7 +36,15 @@ fn main() {
             tauri::async_runtime::spawn(async move {
                 loop {
                     let key = state.get_keys();
-                    if key.contains(&device_query::Keycode::LControl) {
+                    if key.contains(&device_query::Keycode::Q)
+                        && (key.contains(&device_query::Keycode::RControl)
+                            || key.contains(&device_query::Keycode::LControl))
+                    {
+                        window.close();
+                    }
+                    if key.contains(&device_query::Keycode::LAlt)
+                        || key.contains(&device_query::Keycode::RAlt)
+                    {
                         let coords = state.get_mouse().coords;
 
                         let rx = coords.0 as f32 / width - 0.5;
